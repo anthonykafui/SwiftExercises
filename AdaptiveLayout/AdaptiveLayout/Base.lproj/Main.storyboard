@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bte-Ca-bUH">
+                                <rect key="frame" x="27" y="39" width="544" height="415"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cu2-G2-C60">
+                                <rect key="frame" x="27" y="476" width="76" height="30"/>
+                                <state key="normal" title="Action One"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wr-dB-Sd2">
+                                <rect key="frame" x="483" y="476" width="88" height="30"/>
+                                <state key="normal" title="Action Three"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8W-aE-WLN">
+                                <rect key="frame" x="485" y="540" width="86" height="30"/>
+                                <state key="normal" title="Action Four"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf4-Pi-Cch">
+                                <rect key="frame" x="27" y="545" width="78" height="30"/>
+                                <state key="normal" title="Action Two"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cu2-G2-C60" firstAttribute="top" secondItem="Bte-Ca-bUH" secondAttribute="bottom" constant="22" id="2Uu-d2-AVi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3wr-dB-Sd2" secondAttribute="trailing" constant="9" id="6LD-Rc-NtR"/>
+                            <constraint firstItem="p8W-aE-WLN" firstAttribute="top" secondItem="3wr-dB-Sd2" secondAttribute="bottom" constant="34" id="6nF-3K-xsQ"/>
+                            <constraint firstItem="p8W-aE-WLN" firstAttribute="centerX" secondItem="3wr-dB-Sd2" secondAttribute="centerX" constant="1" id="CwF-QB-o3d"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gf4-Pi-Cch" secondAttribute="bottom" constant="25" id="Emb-ao-ShT"/>
+                            <constraint firstItem="gf4-Pi-Cch" firstAttribute="centerX" secondItem="Cu2-G2-C60" secondAttribute="centerX" constant="1" id="Hga-wy-0Mf"/>
+                            <constraint firstItem="gf4-Pi-Cch" firstAttribute="top" secondItem="Cu2-G2-C60" secondAttribute="bottom" constant="39" id="HzX-cs-vDb"/>
+                            <constraint firstItem="Bte-Ca-bUH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="Imd-PX-u6q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p8W-aE-WLN" secondAttribute="bottom" constant="30" id="O30-bE-Rh5"/>
+                            <constraint firstItem="p8W-aE-WLN" firstAttribute="top" secondItem="3wr-dB-Sd2" secondAttribute="bottom" constant="34" id="Py1-bX-vRU"/>
+                            <constraint firstItem="gf4-Pi-Cch" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="SeF-wL-4DH"/>
+                            <constraint firstItem="Cu2-G2-C60" firstAttribute="top" secondItem="Bte-Ca-bUH" secondAttribute="bottom" constant="22" id="Vu1-m0-xBU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bte-Ca-bUH" secondAttribute="trailing" constant="9" id="aRV-CQ-vMA"/>
+                            <constraint firstItem="gf4-Pi-Cch" firstAttribute="top" secondItem="Cu2-G2-C60" secondAttribute="bottom" constant="39" id="caG-Lt-3m5"/>
+                            <constraint firstItem="Cu2-G2-C60" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="ddK-kS-Uf6"/>
+                            <constraint firstItem="3wr-dB-Sd2" firstAttribute="top" secondItem="Bte-Ca-bUH" secondAttribute="bottom" constant="22" id="gkU-Pw-fK7"/>
+                            <constraint firstItem="Bte-Ca-bUH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="kpS-Pb-Bbz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p8W-aE-WLN" secondAttribute="trailing" constant="9" id="nue-nN-QdQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165" y="282"/>
+        </scene>
+    </scenes>
+</document>
